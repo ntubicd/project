@@ -1,0 +1,164 @@
+
+
+.banner img{
+    width: 100%;
+}
+
+.cardicon {
+    transform-style: preserve-3d;
+    margin-top: 50px !important;
+}
+
+/* .masthead {
+    background-image: url("assets/box.png");
+    background-color: rgba(27, 28, 30, .9);
+} */
+
+.tab a {
+    background-color: #e6e6e6;
+}
+
+.tab a:hover {
+    background-color: #ccb800;
+}
+
+.tab a.active {
+    background-color: #ffe500;
+}
+
+.tabcontent {
+    display: none;
+    position: absolute;
+    top: 48%;
+}
+
+.tabcontent p {
+    width: 75%;
+
+}
+
+
+
+@media (max-width:998px) {
+    header h1 {
+        top: 20% !important;
+    }
+
+    .tabcontent {
+        top: 35% !important;
+    }
+
+    #bear {
+        top: 70% !important;
+        right: 2% !important;
+    }
+
+}
+
+@media (max-width:525px) {
+    header h1 {
+        top: 15% !important;
+    }
+
+    .tabcontent {
+        top: 28% !important;
+    }
+
+    .tabcontent h3 {
+        font-size: 16pt;
+    }
+
+    .tabcontent p {
+        font-size: 11pt;
+    }
+    
+            #bear {
+    top: 80% !important;
+    right: 2% !important;
+}
+
+}
+
+#cardbg1{
+    background-image: url();
+    background-repeat: no-repeat;
+    font-size: 40px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+  
+
+.box{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    height:100vh;
+    perspective:1000px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.card-container{
+    position:relative;
+    width:200px;
+    height:250px;
+}
+
+.card-container .cover,
+.card-container .back{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    border-radius:.6rem;
+    box-shadow:0 .2rem .5rem rgba(0,0,0,.18);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    font-size:18px;
+    backface-visibility:hidden;
+    transition:transform 1s ease-in-out;
+    background-color: whitesmoke;
+}
+
+.card-container .cover{
+    background-color: whitesmoke;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: 寬度 高度 */
+    background-size: auto;
+    transform:rotatey(0deg);
+    }
+    .card-container:hover .cover{
+    transform:rotateY(180deg)
+    }
+    .card-container .back{
+    transform:rotatey(-180deg);
+    }
+    .card-container:hover .back{
+    transform:rotateY(0deg);
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
